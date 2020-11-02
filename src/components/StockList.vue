@@ -49,12 +49,11 @@
                     <template v-slot:item="props">
                       <tr>
                         <td align="left">{{ props.item.cust_number }}</td>
-                        <td align="left">{{ props.item.category }}</td>
-                        <td nowrap="true" align="left">{{ props.item.description }}</td>
-                        <td nowrap="true" align="left">{{ props.item.acquired_value }}</td>
-                        <td nowrap="true" align="left">{{ props.item.acquired_date }}</td>
-                        <td nowrap="true" align="left">{{ props.item.recent_value }}</td>
-                        <td nowrap="true" align="left">{{ props.item.recent_date }}</td>
+                        <td align="left">{{ props.item.symbol }}</td>
+                        <td nowrap="true" align="left">{{ props.item.name }}</td>
+                        <td nowrap="true" align="left">{{ props.item.shares }}</td>
+                        <td nowrap="true" align="left">{{ props.item.purchase_price }}</td>
+                        <td nowrap="true" align="left">{{ props.item.purchase_date }}</td>
                         <td align="center"><v-icon @click="updateStock(props.item)">mdi-pencil</v-icon></td>
                         <td align="center"><v-icon @click="deleteStock(props.item)">mdi-delete</v-icon></td>
                       </tr>  

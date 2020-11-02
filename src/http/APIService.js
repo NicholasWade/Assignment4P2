@@ -85,7 +85,7 @@ export class APIService {
  }
 
  getStock(param_pk) {
-  const url = `${API_URL}/api/stockstocks/${param_pk}`;
+  const url = `${API_URL}/api/stocks/${param_pk}`;
   let jwtToken = localStorage.getItem('token');
   console.log(":::jwtToken:::::"+jwtToken);
   const headers = {Authorization: `jwt ${jwtToken}`};
